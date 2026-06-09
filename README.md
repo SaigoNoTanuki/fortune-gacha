@@ -8,3 +8,6 @@ https://fonts.google.com/specimen/Ubuntu?query=ubuntu
 
 SVG:
 https://www.flaticon.com/icon-fonts-most-downloaded/2?weight=bold&type=uicon
+
+
+The fortunes themselves were all AI generated except for one, I think it will be obvious which is not AI.
