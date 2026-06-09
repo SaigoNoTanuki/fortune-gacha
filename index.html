@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; width: 100%; background-color: #1A1953;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Fortune Gacha</title>
+</head>
+<body style="height: 100%; display: grid; grid-template-rows: 30%; margin: 0;">
+    <div class="header" ">
+        <h1 id="welcomeText">
+            Welcome to Fortune Gacha.
+        </h1>
+    </div>
+    <div class="fortune3000">
+        <p>Press this button to pull a fortune</p>
+        <button id="fortuneButton">
+            <p>Get Fortune</p>
+        </button>
+    </div>
+    <div class="bottom"">
+        <a href="./Pages/tutorial.html">
+        <button id="tutorialButton">
+            <span>
+                Learn how it works
+            </span>
+        </button>
+        </a>
+    </div>
+    <div id="modal">
+        <img id="modalIcon" src="./assets/msg.svg" alt="Message icon.">
+        <h2 id="modalHeader">Your fortune is</h2>
+        <p id="modalText"></p>
+        <button id="close">
+            Close
+        </button>
+    </div>
+</body>
+<script src="./index.js" defer></script>
+</html>

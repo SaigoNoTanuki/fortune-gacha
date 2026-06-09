@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+#welcomeText {
+    font-size: 3rem;
+    font-family: Ubuntu;
+    color: azure;
+
+    @media (width <= 640px)
+    {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fortune3000 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.5rem;
+    color: azure;
+    font-family: Ubuntu;
+}
+
+/* From Uiverse.io by Randdose */ 
+#fortuneButton {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0em 1.5em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+#fortuneButton p {
+  z-index: 1;
+}
+
+#fortuneButton:hover {
+  color: #212121;
+}
+
+#fortuneButton:active {
+  border-color: teal;
+}
+
+#fortuneButton::after, #fortuneButton::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+#fortuneButton::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+#fortuneButton::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+#fortuneButton:hover:before {
+  transform: translateX(-1em);
+}
+#fortuneButton:hover:after {
+  transform: translateX(1em);
+}
+
+#fortuneButton:active:before,
+#fortuneButton:active:after {
+  background: teal;
+}
+
+/* From Uiverse.io by SelfMadeSystem */ 
+/*SelfMadeSystem: "Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor thing"*/
+
+#tutorialButton {
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+#tutorialButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+#tutorialButton:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+#tutorialButton span {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  background: #000;
+  border-radius: 3px;
+  height: 100%;
+}
+
+/* From Uiverse.io by 00Kubi */ 
+#modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 25rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 13px;
+  position: fixed;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  z-index: 99;
+  visibility: hidden;
+  font-family: Ubuntu;
+
+  @media (width <= 640px)
+  {
+    width: 23rem;
+    height: 13rem;
+  }
+}
+
+#modalIcon {
+  width: 1.5rem;
+}
+
+#modalIcon g path {
+  fill: rgb(97, 81, 81);
+}
+
+#modalHeader {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(26, 26, 26);
+}
+
+#modalText {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+
+  @media (width <= 640px)
+  {
+    font-size: 0.80rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+#modalText p {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246);
+}
+
+#modalText p:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+#close {
+  width: 80px;
+  height: 30px;
+  background-color: #7b57ff;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #977ef3, 0 2px 4px -1px #977ef3;
+}
+
+#close:hover {
+  background-color: #9173ff;
+  box-shadow: 0 10px 15px -3px #977ef3, 0 4px 6px -2px #977ef3;
+}
