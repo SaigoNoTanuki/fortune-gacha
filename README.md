@@ -5,3 +5,6 @@ https://uiverse.io/Randdose/brown-grasshopper-46 - CSS code for button.
 
 Font:
 https://fonts.google.com/specimen/Ubuntu?query=ubuntu
+
+SVG:
+https://www.flaticon.com/icon-fonts-most-downloaded/2?weight=bold&type=uicon
